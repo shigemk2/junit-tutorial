@@ -21,10 +21,15 @@ public class CalculatorTest {
         assertThat(actual, is(expected));
     }
     @Test
-    public void divideで3と2の乗算結果が取得できる() {
+    public void divideで3と2の除算結果が取得できる() {
         Calculator calc = new Calculator();
         float expected = 1.5f;
         float actual = calc.divide(3, 2);
         assertThat(actual, is(expected));
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void divideで5と0ののときIllegalArgumentExceptionを送出する() {
+        Calculator calc = new Calculator();
+        calc.divide(5, 0);
     }
 }
