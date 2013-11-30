@@ -6,9 +6,9 @@ import org.junit.Test;
 
 public class CalculatorTest {
 
-	@Test
-	public void test() {
-		fail("‚Ü‚¾À‘•‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ");
-	}
+    @Test
+    public void multiplyã§ä¹—ç®—çµæœãŒå–å¾—ã§ãã‚‹() {
+        fail("ã¾ã å®Ÿè£…ã•ã‚Œã¦ã„ã¾ã›ã‚“");
+    }
 
 }
